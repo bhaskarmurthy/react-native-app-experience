@@ -51,7 +51,7 @@ yarn test
 
 To edit the Objective-C files, open `example/ios/VitalsExample.xcworkspace` in XCode and find the source files at `Pods > Development Pods > react-native-vitals`.
 
-To edit the Kotlin files, open `example/android` in Android studio and find the source files at `reactnativevitals` under `Android`.
+To edit the Kotlin files, open `example/android` in Android studio and find the source files at `react-native-vitals` under `Android`.
 
 ### Commit message convention
 
