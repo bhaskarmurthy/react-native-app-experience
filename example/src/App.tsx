@@ -3,16 +3,12 @@ import { StyleSheet, View, Text } from 'react-native';
 import Vitals from 'react-native-vitals';
 
 export default function App() {
-  const [result, setResult] = React.useState<number | undefined>();
-
-  React.useEffect(() => {
-    Vitals.multiply(3, 7).then(setResult);
-  }, []);
-
   return (
-    <View style={styles.container}>
-      <Text>Result: {result}</Text>
-    </View>
+    <React.Profiler id="App" onRender={() => Vitals.reportFullyDrawn()}>
+      <View style={styles.container}>
+        <Text>Drawn</Text>
+      </View>
+    </React.Profiler>
   );
 }
 

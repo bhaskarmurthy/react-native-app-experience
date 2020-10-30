@@ -1,7 +1,7 @@
 import { NativeModules } from 'react-native';
 
 type VitalsType = {
-  multiply(a: number, b: number): Promise<number>;
+  reportFullyDrawn: () => void;
 };
 
 const { Vitals } = NativeModules;
